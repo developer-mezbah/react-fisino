@@ -21,7 +21,7 @@ const Products = () => {
             <div className="container">
                 <div className='row row-cols-1 row-cols-lg-3 g-4 py-5'>
                     {
-                        products.map(product => <Product key={product.id} product={product}></Product>)
+                        products.map(product => <Product key={product._id} product={product}></Product>)
                     }
                 </div>
             </div>

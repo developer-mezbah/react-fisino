@@ -23,14 +23,14 @@ function App() {
           path: '/',
           element: <Home></Home>,
           loader: async () => {
-            return fetch('products.json')
+            return await fetch(`${import.meta.env.VITE_OST_URL}/services`)
           }
         },
         {
           path: '/products',
           element: <Products></Products>,
           loader: async () => {
-            return fetch('products.json')
+            return await fetch(`${import.meta.env.VITE_OST_URL}/services`)
           }
         },
         {
@@ -41,7 +41,7 @@ function App() {
           path: '/cart',
           element: <PrivateRouter><Cart></Cart></PrivateRouter>,
           loader: async () => {
-            return fetch('products.json')
+            return await fetch(`${import.meta.env.VITE_OST_URL}/services`)
           }
         },
         {
