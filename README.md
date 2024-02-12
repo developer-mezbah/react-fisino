@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 "# fisino" 
 # react-fisino
 # react-fisino
+# react-fisino
