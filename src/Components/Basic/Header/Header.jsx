@@ -9,7 +9,6 @@ import { WebController } from '../../../ParentContext/Context';
 
 const Header = () => {
     const { userInfo, logOut, verify } = useContext(WebController);
-    console.log(userInfo);
     const verifyAccount = () => {
         verify();
     }

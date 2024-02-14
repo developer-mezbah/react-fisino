@@ -10,7 +10,6 @@ import Product from "../SignleProduct/Product";
 
 const Home = () => {
   const products = useLoaderData();
-  console.log(products);
 
   useEffect(() => {
     window.scrollTo(0, 0);

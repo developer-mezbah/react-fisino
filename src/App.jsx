@@ -38,10 +38,10 @@ function App() {
           element: <About></About>
         },
         {
-          path: '/cart',
+          path: '/cart/:id',
           element: <PrivateRouter><Cart></Cart></PrivateRouter>,
-          loader: async () => {
-            return await fetch(`${import.meta.env.VITE_OST_URL}/services`)
+          loader: async ({params}) => {
+            return await fetch(`${import.meta.env.VITE_OST_URL}/services/${params.id}`)
           }
         },
         {
